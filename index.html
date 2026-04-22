@@ -32,7 +32,9 @@
     <header class="bg-[#f5f7ff] border-b border-gray-200 py-8 px-32">
         <div class="container mx-auto flex items-center justify-between">
             <div class="flex items-center">
-                <div class="text-black font-bold text-2xl">LOGO</div>
+                <div class="text-black font-bold text-2xl">
+                    <img src="images/logo.png" alt="">
+                </div>
             </div>
             <nav class="hidden md:flex space-x-8 font-medium text-black">
                 <a href="#" class="hover:text-blue-600 transition">Laptops</a>
@@ -50,13 +52,25 @@
                     <button class="hover:text-blue-600"><i class="fa-solid fa-cart-shopping text-lg"></i></button>
                     <span class="absolute -top-2 -right-2 bg-blue-600 text-white text-[10px] rounded-full w-4 h-4 flex items-center justify-center">2</span>
                 </div>
-                <button class="hover:text-blue-600"><i class="fa-regular fa-circle-user text-2xl"></i></button>
+               <button class="hover:text-blue-600"><img src="images/profile.png" alt="Profile" class="w-10 h-10"></button>
             </div>
         </div>
     </header>
     <main class="px-32">
         <div class="container mx-auto">
-            <img src="images/Group 56.png" alt="Banner" class="w-full h-auto">
+            <div class="relative group">
+                <img src="images/image 26.png" alt="Banner" class="w-full h-auto">
+                
+                <!-- Left Arrow -->
+                <button class="absolute left-0 top-1/2 -translate-y-1/2 bg-[#252931] text-white w-10 h-16 rounded-r-full flex items-center justify-center transition hover:opacity-80 pl-2">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                
+                <!-- Right Arrow -->
+                <button class="absolute right-0 top-1/2 -translate-y-1/2 bg-[#252931] text-white w-10 h-16 rounded-l-full flex items-center justify-center transition hover:opacity-80 pr-2">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
             
             <div class="flex justify-between items-center mt-8 mb-4">
                 <h2 class="text-2xl font-semibold text-black">New Products</h2>
@@ -69,8 +83,12 @@
                     <div class="text-[10px] text-green-500 mb-2 flex items-center">
                         <i class="fa-solid fa-circle-check mr-1"></i> in stock
                     </div>
-                    <div class="h-40 w-full mb-4 flex items-center justify-center">
+                    <div class="h-40 w-full mb-4 flex items-center justify-center relative group/img">
                         <img src="images/image 1.png" alt="Product" class="max-h-full max-w-full object-contain">
+                        <!-- Left Arrow -->
+                        <button class="absolute left-0 bottom-0 bg-[#666666] text-white w-5 h-10 rounded-r-full flex items-center justify-center transition text-[10px]">
+                            <i class="fa-solid fa-chevron-left mr-1"></i>
+                        </button>
                     </div>
                     <div class="flex items-center mb-2">
                         <div class="flex text-yellow-400 text-[10px]">
@@ -212,8 +230,12 @@
                     <div class="text-[10px] text-green-500 mb-2 flex items-center">
                         <i class="fa-solid fa-circle-check mr-1"></i> in stock
                     </div>
-                    <div class="h-40 w-full mb-4 flex items-center justify-center">
+                    <div class="h-40 w-full mb-4 flex items-center justify-center relative group/img">
                         <img src="images/image 3.png" alt="Product" class="max-h-full max-w-full object-contain">
+                        <!-- Right Arrow -->
+                        <button class="absolute right-0 bottom-0 bg-[#666666] text-white w-5 h-10 rounded-l-full flex items-center justify-center transition text-[10px]">
+                            <i class="fa-solid fa-chevron-right ml-1"></i>
+                        </button>
                     </div>
                     <div class="flex items-center mb-2">
                         <div class="flex text-yellow-400 text-[10px]">
@@ -238,5 +260,163 @@
             </div>
         </div>
     </main>
+    <main class="px-32 mt-8 mb-8">
+        <div class="container mx-auto bg-[#F5F7FF] min-h-[70px]">
+        </div>
+    <div class="grid grid-cols-6 mt-8 border-l border-t border-gray-200">
+                <!-- Product 1 -->
+                <div class="bg-white hover:shadow-lg transition relative border-r border-b border-gray-200 flex flex-col items-center justify-center pb-6">
+                    <img src="images/image 30.png" alt="Product" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="relative z-10 flex flex-col items-center justify-center h-full w-full">
+                        <span class="text-white font-bold text-xl">Custome</span>
+                        <span class="text-white font-bold text-xl">Builds</span>
+                    </div>
+                    <a href="#" class="absolute bottom-6 text-gray-200 text-sm underline z-10 hover:text-white transition">See All Products</a>
+                </div>
+                <!-- Product 2 -->
+                <div class="bg-white p-4 hover:shadow-lg transition relative border-r border-b border-gray-200 flex flex-col items-start text-left">
+                <div class="text-[10px] text-green-500 mb-2 flex items-center">
+                        <i class="fa-solid fa-circle-check mr-1"></i> in stock
+                    </div>
+                    <div class="h-40 w-full mb-4 flex items-center justify-center">
+                        <img src="images/cb1.png" alt="Product" class="max-h-full max-w-full object-contain">
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <div class="flex text-yellow-400 text-[10px]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star text-gray-300"></i>
+                        </div>
+                        <span class="text-gray-400 text-[10px] ml-2">Reviews (4)</span>
+                    </div>
+                    <h3 class="text-[13px] leading-tight font-medium text-black mb-2">
+                        EX DISPLAY : MSI Pro 16<br>
+                        Flex-036AU 15.6 MULTITOUCH<br>
+                        All-In-On...
+                    </h3>
+                    <div class="mt-auto">
+                        <div class="text-sm text-gray-400 line-through">$499.00</div>
+                        <div class="text-lg font-bold text-black">$499.00</div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="bg-white p-4 hover:shadow-lg transition relative border-r border-b border-gray-200 flex flex-col items-start text-left">
+                    <div class="text-[10px] text-green-500 mb-2 flex items-center">
+                        <i class="fa-solid fa-circle-check mr-1"></i> in stock
+                    </div>
+                    <div class="h-40 w-full mb-4 flex items-center justify-center">
+                        <img src="images/cb2.png" alt="Product" class="max-h-full max-w-full object-contain">
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <div class="flex text-yellow-400 text-[10px]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star text-gray-300"></i>
+                        </div>
+                        <span class="text-gray-400 text-[10px] ml-2">Reviews (4)</span>
+                    </div>
+                    <h3 class="text-[13px] leading-tight font-medium text-black mb-2">
+                        EX DISPLAY : MSI Pro 16<br>
+                        Flex-036AU 15.6 MULTITOUCH<br>
+                        All-In-On...
+                    </h3>
+                    <div class="mt-auto">
+                        <div class="text-sm text-gray-400 line-through">$499.00</div>
+                        <div class="text-lg font-bold text-black">$499.00</div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="bg-white p-4 hover:shadow-lg transition relative border-r border-b border-gray-200 flex flex-col items-start text-left">
+                    <div class="text-[10px] text-green-500 mb-2 flex items-center">
+                        <i class="fa-solid fa-circle-check mr-1"></i> in stock
+                    </div>
+                    <div class="h-40 w-full mb-4 flex items-center justify-center">
+                        <img src="images/cb3.png" alt="Product" class="max-h-full max-w-full object-contain">
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <div class="flex text-yellow-400 text-[10px]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star text-gray-300"></i>
+                        </div>
+                        <span class="text-gray-400 text-[10px] ml-2">Reviews (4)</span>
+                    </div>
+                    <h3 class="text-[13px] leading-tight font-medium text-black mb-2">
+                        EX DISPLAY : MSI Pro 16<br>
+                        Flex-036AU 15.6 MULTITOUCH<br>
+                        All-In-On...
+                    </h3>
+                    <div class="mt-auto">
+                        <div class="text-sm text-gray-400 line-through">$499.00</div>
+                        <div class="text-lg font-bold text-black">$499.00</div>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="bg-white p-4 hover:shadow-lg transition relative border-r border-b border-gray-200 flex flex-col items-start text-left">
+                    <div class="text-[10px] text-green-500 mb-2 flex items-center">
+                        <i class="fa-solid fa-circle-check mr-1"></i> in stock
+                    </div>
+                    <div class="h-40 w-full mb-4 flex items-center justify-center">
+                        <img src="images/cb4.png" alt="Product" class="max-h-full max-w-full object-contain">
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <div class="flex text-yellow-400 text-[10px]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star text-gray-300"></i>
+                        </div>
+                        <span class="text-gray-400 text-[10px] ml-2">Reviews (4)</span>
+                    </div>
+                    <h3 class="text-[13px] leading-tight font-medium text-black mb-2">
+                        EX DISPLAY : MSI Pro 16<br>
+                        Flex-036AU 15.6 MULTITOUCH<br>
+                        All-In-On...
+                    </h3>
+                    <div class="mt-auto">
+                        <div class="text-sm text-gray-400 line-through">$499.00</div>
+                        <div class="text-lg font-bold text-black">$499.00</div>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+<div class="bg-white p-4 hover:shadow-lg transition relative border-r border-b border-gray-200 flex flex-col items-start text-left">
+                    <div class="text-[10px] text-green-500 mb-2 flex items-center">
+                        <i class="fa-solid fa-circle-check mr-1"></i> in stock
+                    </div>
+                    <div class="h-40 w-full mb-4 flex items-center justify-center relative group/img">
+                        <img src="images/cb5.png" alt="Product" class="max-h-full max-w-full object-contain">
+                    </div>
+                    <div class="flex items-center mb-2">
+                        <div class="flex text-yellow-400 text-[10px]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star text-gray-300"></i>
+                        </div>
+                        <span class="text-gray-400 text-[10px] ml-2">Reviews (4)</span>
+                    </div>
+                    <h3 class="text-[13px] leading-tight font-medium text-black mb-2">
+                        EX DISPLAY : MSI Pro 16<br>
+                        Flex-036AU 15.6 MULTITOUCH<br>
+                        All-In-On...
+                    </h3>
+                    <div class="mt-auto">
+                        <div class="text-sm text-gray-400 line-through">$499.00</div>
+                        <div class="text-lg font-bold text-black">$499.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
 </body>
 </html>
